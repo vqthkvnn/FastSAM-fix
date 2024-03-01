@@ -274,7 +274,7 @@ class FastSAMPrompt:
 
         if not retinamask:
             show = cv2.resize(show, (target_width, target_height), interpolation=cv2.INTER_NEAREST)
-        ax.imshow(show)
+        return show
 
     def fast_show_mask_gpu(
         self,
